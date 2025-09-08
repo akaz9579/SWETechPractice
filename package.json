@@ -1,0 +1,15 @@
+{
+  "name": "webdev",
+  "version": "1.0.0",
+  "main": "js/invServer.js",
+  "scripts": {
+    "start": "node js/invServer.js",
+    "dev": "nodemon js/invServer.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
