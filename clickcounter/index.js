@@ -1,19 +1,29 @@
 let count = 0;
 
-document.getElementById("decrease").onclick = decrease()
-document.getElementById("increase").onclick = increase()
-document.getElementById("reset").onclick = reset()
+const countLabel = document.getElementById("count");
+const dButton = document.getElementById("decrease");
+const iButton = document.getElementById("increase");
+const rButton = document.getElementById("reset");
 
-
-function decrease(){
-    count--;
-
+function update() {
+  countLabel.textContent = count;
 }
 
-function increase(){
-   count++;
+function decrease() {
+  count--;
+  update();
 }
 
-function reset(){
-   count=0; 
+function increase() {
+  count++;
+  update();
 }
+
+function reset() {
+  count = 0;
+  update();
+}
+
+dButton.onclick = decrease;
+iButton.onclick = increase;
+rButton.onclick = reset;
