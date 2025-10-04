@@ -1,0 +1,2 @@
+const myPromise= new Promise();
+
